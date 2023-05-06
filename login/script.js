@@ -2,11 +2,29 @@ const form = document.getElementById('inputs');
 
 var totalUser=[];
 
+
+  
+
 if(localStorage.getItem('currUser')){
+
     document.getElementById('message').style.display='inline';
+
     document.getElementById('message').setAttribute('class','green')
-    document.getElementById('message').innerText='Login Successfully';
+
+    document.getElementById('message').innerText='You are already login please wait will redirect you to shop page...';
+
+        setTimeout(() => {
+
+          location.href = '../shop/index.html';
+
+        }, 1500);
+
+        
+
 }
+  
+
+
 
 
 
@@ -62,9 +80,15 @@ form.addEventListener('submit',(event)=>{
     document.getElementById('message').setAttribute('class','green')
     document.getElementById('message').innerText='Login sucessful';
 
-    form.reset();
-    document.getElementById('message').innerHTML="";
-    location.href='cart\shop\index.html';
+    
+
+        setTimeout(() => {
+
+          location.href = '../shop/index.html';
+
+        }, 1000);
+   
+
 
     
 

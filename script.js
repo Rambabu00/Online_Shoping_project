@@ -7,7 +7,7 @@ if(localStorage.getItem('currUser')){
 
         setTimeout(() => {
 
-          location.href = './shop/index.html';
+          location.href = '../shop/index.html';
 
         }, 1000);
     }
